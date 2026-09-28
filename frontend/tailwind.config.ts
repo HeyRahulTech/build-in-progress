@@ -9,18 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        orange: {
-          500: "#F97316", // Industrial Orange
-          600: "#EA580C",
-        },
-        navy: {
-          800: "#1E3A8A", // Navy Blue
-          900: "#172554",
+        blinkit: {
+          yellow: "#FFD100",
+          green: "#0C831F",
+          blue: "#1E3A8A",
         },
         slate: {
-          50: "#F8FAFC",
+          50: "#F8F9FA", // Background: Off-White/Light Gray
           100: "#F1F5F9",
-          500: "#64748B", // Slate Gray
+          400: "#94A3B8",
+          500: "#64748B",
+          700: "#334155",
+          800: "#1E293B",
           900: "#0F172A",
         }
       },

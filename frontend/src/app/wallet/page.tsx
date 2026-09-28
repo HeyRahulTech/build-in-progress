@@ -19,20 +19,20 @@ export default function WalletPage() {
       {/* Header */}
       <header className="bg-white shadow-sm p-4 flex items-center sticky top-0 z-50">
         <button onClick={() => router.back()} className="mr-4">
-          <ArrowLeft size={24} className="text-navy-900" />
+          <ArrowLeft size={24} className="text-blue-900" />
         </button>
-        <h1 className="font-bold text-xl text-navy-900">Buildr Money</h1>
+        <h1 className="font-bold text-xl text-blue-900">Buildr Money</h1>
       </header>
 
       {/* Wallet Balance Card */}
       <section className="p-4">
-        <div className="bg-gradient-to-br from-navy-900 to-navy-800 rounded-2xl p-6 text-white shadow-lg relative overflow-hidden">
+        <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-2xl p-6 text-white shadow-lg relative overflow-hidden">
           <div className="absolute top-0 right-0 p-4 opacity-10">
             <WalletIcon size={120} />
           </div>
-          <p className="text-navy-100 font-medium mb-1">Available Balance</p>
+          <p className="text-blue-100 font-medium mb-1">Available Balance</p>
           <h2 className="text-4xl font-bold mb-4">₹ 0.00</h2>
-          <div className="flex gap-2 text-sm text-navy-200">
+          <div className="flex gap-2 text-sm text-blue-200">
             <span className="bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm flex items-center gap-1">
               <History size={14} /> View History
             </span>

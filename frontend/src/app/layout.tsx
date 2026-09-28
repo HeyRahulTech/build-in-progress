@@ -1,9 +1,23 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { CartProvider } from "./CartContext";
 
 export const metadata: Metadata = {
-  title: "Buildr - Professional Construction Services",
+  title: "Buildr",
   description: "Connect with verified Masons, Carpenters, Plumbers, and Electricians.",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Buildr",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: "#F8F9FA",
 };
 
 export default function RootLayout({
@@ -13,9 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        <main className="max-w-md mx-auto min-h-screen bg-slate-50 relative shadow-2xl overflow-x-hidden">
-          {children}
+      <body className="antialiased bg-slate-200">
+        <main className="max-w-md mx-auto min-h-screen bg-[#F8F9FA] relative shadow-2xl overflow-x-hidden border-x border-slate-300">
+          <CartProvider>
+            {children}
+          </CartProvider>
         </main>
       </body>
     </html>
